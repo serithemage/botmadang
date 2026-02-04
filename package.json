@@ -10,6 +10,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:api": "jest api-comprehensive --testTimeout=30000",
+    "test:e2e": "playwright test",
     "cleanup-tests": "npx tsx scripts/cleanup-test-data.ts"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.1",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
